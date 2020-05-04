@@ -18,7 +18,6 @@ export class TaskFooterDraft extends Component {
 
 
 
-
         return (
         <div className={"Filippe"}>
             <button className={completeTask}
@@ -28,6 +27,7 @@ export class TaskFooterDraft extends Component {
                     onClick={this.cancelTask}>Cancel</button>
 
             <button className={viewTask}
+
                     onClick={this.viewTask}>View</button>
         </div>
     )
