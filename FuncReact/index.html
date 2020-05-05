@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://unpkg.com/react@16/umd/react.
+development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.
+development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/
+babel.min.js"></script>
+</head>
+<body>
+<div id="container"></div>
+<script type="text/babel">
+    class LightningCounter extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                strikes: 0
+            };
+            this.timerTick = this.timerTick.bind(this);
+        }
+        timerTick() {
+            this.setState({
+                strikes: this.state.strikes + 1
+            });
+        }
+
+        render() {
+
+            return (
+
+                <div>
+                    <button onChange={this.timerTick}>Click</button>
+                </div>
+
+            );
+        }
+    }
+    class Counter extends React.Component {
+        render() {
+
+            return (
+                <div style={divStyle}>
+
+                </div>
+            );
+        }
+    }
+    ReactDOM.render(
+        <Counter />,
+        document.querySelector("#container")
+    );
+</script>
+</body>
+</html>
