@@ -7,10 +7,10 @@ export default class ButtonInc extends Component {
         return(
             <div className="buttonInc">
                 <div>
-                    <span>{this.props.count}</span>
+                    {/*<span>{this.props.count}</span>*/}
                 </div>
 
-                <button onClick={() => {alert(this.props.count)}}>Inc</button>
+                {/*<button onClick={() => {alert(this.props.count)}}>Inc</button>*/}
             </div>
         );
     }
