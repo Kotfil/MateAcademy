@@ -1,0 +1,7 @@
+.wrapperCount {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 100%;
+    color: #55acee;
+}
